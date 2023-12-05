@@ -28,19 +28,19 @@ export async function Footer() {
       <Gutter className={classes.wrap}>
         <Link href="/">
           <picture>
-            <img
-              className={classes.logo}
-              alt="Payload Logo"
-              src="https://raw.githubusercontent.com/payloadcms/payload/main/packages/payload/src/admin/assets/images/payload-logo-light.svg"
-            />
+            <img className={classes.logo} alt="Passwall Solutions" src="/IMG_8236.jpeg" />
           </picture>
         </Link>
+        <div>
+          <h4>Janice Marquardt</h4>
+          <h6>Principal Consultant</h6>
+        </div>
         <nav className={classes.nav}>
           <ThemeSelector />
           {navItems.map(({ link }, i) => {
             return <CMSLink key={i} {...link} />
           })}
-          <Link href="/admin">Admin</Link>
+          {/* <Link href="/admin">Admin</Link>
           <Link
             href="https://github.com/payloadcms/payload/tree/main/templates/website"
             target="_blank"
@@ -50,7 +50,7 @@ export async function Footer() {
           </Link>
           <Link href="https://payloadcms.com" target="_blank" rel="noopener noreferrer">
             Payload
-          </Link>
+        </Link> */}
         </nav>
       </Gutter>
     </footer>
